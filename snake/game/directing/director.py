@@ -37,6 +37,8 @@ class Director:
             cast (Cast): The cast of actors.
             script (Script): The script of actions.
         """
-        actions = script.get_actions(group)    
+        actions = script.get_actions(group)  
+        # actions = script.get_actions(group)  
         for action in actions:
-            action.execute(cast, script)          
+            action.execute(cast, script) 
+            # action.execute_two(cast, script)         
